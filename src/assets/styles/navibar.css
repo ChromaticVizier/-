@@ -1,0 +1,76 @@
+ul,li {
+    list-style: none;
+    float: left;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 14px;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    background-color: white;
+    opacity: 70%;
+}
+
+nav ul {
+    position:absolute;
+    background-color: white;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav>ul>li {
+    margin: 0 15px;
+}
+
+nav>ul>li>a {
+    padding: 0 10px;
+    display: block;
+    height: 60px;
+}
+
+nav>ul>li:hover > a {
+    background-color: black;
+    color: white;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav>ul>li>ul,
+nav>ul>li>ul>li>ul {
+    display: none;
+}
+
+nav>ul>li>ul>li,
+nav>ul>li>ul>li>ul>li {
+    width: 100%;
+}
+
+nav>ul>li>ul>li>a,
+nav>ul>li>ul>li>ul>li>a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+nav>ul>li>ul>li>ul>li:hover >a,
+nav>ul>li>ul>li:hover >a {
+    background-color: black;
+    color: white;
+}
+
+nav>ul>li>ul>li>ul {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}

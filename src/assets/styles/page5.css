@@ -1,0 +1,19 @@
+#page5jb {
+    position: absolute;
+    left: 33%;
+    top: 35%;
+    /*transform: translate(-50%,-50%);*/
+    height: 33vh;
+    width: 33vw;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+}
+
+#page2title {
+    position: absolute;
+    left: 6vw;
+    top: 10vh;
+    font-family: BebasNeue, Serif;
+    font-size: 30vh;
+    z-index: 993;
+}

@@ -1,0 +1,33 @@
+.outer-container {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    background-color: #323e74;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+el-container {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+}
+
+main {
+    position: absolute;
+    top: 0;
+}

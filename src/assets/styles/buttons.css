@@ -1,0 +1,87 @@
+.flipleftbutton {
+    position: fixed;
+    z-index: 998;
+    left: 30px;
+    bottom: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.fliprightbutton {
+    position: fixed;
+    z-index: 997;
+    right: 30px;
+    bottom: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.leftArrow {
+    height: 100px;
+    width: 100px;
+    left: 30px;
+    bottom: 45%;
+    position: fixed;
+    z-index: 997;
+    clip-path: polygon(25% 0, 10% 50%, 25% 100%, 15% 100%, 0 50%, 15% 0);
+}
+
+.rightArrow {
+    height: 100px;
+    width: 100px;
+    right: 30px;
+    bottom: 45%;
+    position: fixed;
+    z-index: 998;
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 75% 100%, 90% 50%, 75% 0);
+}
+
+.quickSearchButton {
+    width: 12vw;
+    height: 7vh;
+    border-radius: 1vh;
+    /*background-color: mediumslateblue;*/
+    background: rgba(123, 104, 238, 0.5);
+    position: absolute;
+    bottom: 20vh;
+    right: 45vw;
+    font-family: Prompts;
+    text-align: center;
+}
+
+.quickSearchButton:hover {
+    background: rgba(123, 104, 238, 1);
+
+}
+
+.quickSearchButton2:hover {
+    background: rgba(205, 92, 92, 1);
+}
+
+.quickSearchButton2 {
+    width: 12vw;
+    height: 7vh;
+    border-radius: 1vh;
+    background: rgba(205, 92, 92, 0.7);
+    position: absolute;
+    bottom: 35vh;
+    right: 29vw;
+    font-family: Prompts;
+    text-align: center;
+}
+
+.right-button-new {
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(
+            45% 0,
+            55% 0,
+            100% 50%,
+            55% 100%,
+            45% 100%,
+            88% 54%,
+            0 53%,
+            0 47%,
+            88% 48%
+    );
+}

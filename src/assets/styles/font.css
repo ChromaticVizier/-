@@ -1,0 +1,44 @@
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'BebasNeue';
+    /* 引入字体 */
+    src: url('./fonts/BebasNeue-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'Bitter-Light';
+    /* 引入字体 */
+    src: url('./fonts/Bitter-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'Prompts';
+    /* 引入字体 */
+    src: url('./fonts/Prompt-Black.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'Kalam';
+    /* 引入字体 */
+    src: url('./fonts/Kalam-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'Jacquard24';
+    /* 引入字体 */
+    src: url('./fonts/Jacquard24-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
