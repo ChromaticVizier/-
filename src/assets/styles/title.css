@@ -27,14 +27,17 @@
 
 .ath-image {
     position: absolute;
-    top: 0;
-    left: 70%;
-    width: 100vh;
-    height: 100vh;
+    top: 25%;
+    left: 85%;
+    width: 50vh;
+    height: 50vh;
     /*opacity: 60%;*/
     z-index: 1;
     animation: infinite-roll 20s infinite linear;
     opacity: 80%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
 }
 
 @keyframes infinite-roll {

@@ -42,3 +42,12 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    /* 重命名字体名 */
+    font-family: 'JosefinSans';
+    /* 引入字体 */
+    src: url('./fonts/JosefinSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

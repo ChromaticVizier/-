@@ -1,21 +1,3 @@
-.flipleftbutton {
-    position: fixed;
-    z-index: 998;
-    left: 30px;
-    bottom: 50%;
-    height: 30px;
-    width: 30px;
-}
-
-.fliprightbutton {
-    position: fixed;
-    z-index: 997;
-    right: 30px;
-    bottom: 50%;
-    height: 30px;
-    width: 30px;
-}
-
 .leftArrow {
     height: 100px;
     width: 100px;
@@ -23,7 +5,9 @@
     bottom: 45%;
     position: fixed;
     z-index: 997;
-    clip-path: polygon(25% 0, 10% 50%, 25% 100%, 15% 100%, 0 50%, 15% 0);
+    background: rgba(255, 255, 255, 0.6);
+    /*clip-path: polygon(25% 0, 10% 50%, 25% 100%, 15% 100%, 0 50%, 15% 0);*/
+    clip-path: polygon(33% 7%, 15% 50%, 33% 93%, 23% 93%, 5% 50%, 23% 7%);
 }
 
 .rightArrow {
@@ -33,7 +17,17 @@
     bottom: 45%;
     position: fixed;
     z-index: 998;
-    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 75% 100%, 90% 50%, 75% 0);
+    background: rgba(255, 255, 255, 0.6);
+    /*clip-path: polygon(85% 0, 100% 50%, 85% 100%, 75% 100%, 90% 50%, 75% 0);*/
+    clip-path: polygon(77% 7%, 95% 50%, 77% 93%, 67% 93%, 85% 50%, 67% 7%);
+}
+
+.rightArrow:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.leftArrow:hover {
+    background: rgba(255, 255, 255, 1);
 }
 
 .quickSearchButton {

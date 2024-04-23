@@ -45,38 +45,42 @@ export default {
       }
     },
     pageDesc(controlLen, curr) {
-      // console.log('page--')
-      // console.log('control length:', controlLen)
       window.scrollTo(curr - controlLen,0)
     },
     pageInc(controlLen, curr) {
-      // console.log('page++')
-      // console.log('control length:', controlLen)
       window.scrollTo(curr + controlLen,0)
     },
     handleScroll() {
-      // console.log(window.scrollX)
+      // 当前窗宽
       let currentWW = window.innerWidth
-      if(window.scrollX >= 1.7 * currentWW) {
-        let currentEle = document.getElementById('page5jb')
-        currentEle.removeAttribute('hidden')
-        currentEle.setAttribute('class', 'animate__animated animate__bounceInUp')
-        // setTimeout(() => currentEle.removeAttribute('class'), 2000)
-        let currentEle3 = document.getElementById('about-tag')
-        currentEle3.removeAttribute('hidden')
-        currentEle3.setAttribute('class', 'animate__animated animate__bounceInDown')
-      }
-      if(window.scrollX >= 0.9*currentWW) {
+
+      // 第二页
+      if(window.scrollX >= 0.7 * currentWW) {
         let currentEle = document.getElementById('page2title')
         currentEle.removeAttribute('hidden')
         currentEle.setAttribute('class', 'page2title-to-add')
         let currentEle1 = document.getElementById('page2secondary')
-        // setTimeout(() => currentEle1.setAttribute('none', 'none'), 3000)
         currentEle1.removeAttribute('hidden')
         currentEle1.setAttribute('class', 'page2secondary-to-add')
         let currentEle2 = document.getElementById('page2content')
         currentEle2.removeAttribute('hidden')
         currentEle2.setAttribute('class', 'page2content-to-add')
+      }
+
+      // 第三页
+      if(window.scrollX >= 1.7 * currentWW) {
+        let currentEle = this.$('#page5jb')
+        currentEle.removeAttr('hidden')
+        currentEle.attr('class', 'animate__animated animate__bounceInUp')
+        let currentEle3 = this.$('#about-tag')
+        currentEle3.removeAttr('hidden')
+        currentEle3.attr('class', 'animate__animated animate__bounceInDown')
+      }
+
+      //第四页
+      if(window.scrollX >= 2.7 * currentWW) {
+        let currentEle = this.$('#page6jb')
+        currentEle.attr('class', 'menu-bar-to-add')
       }
     },
   },
@@ -93,32 +97,32 @@ export default {
         <ul>
           <li><a href="#">Home Page</a></li>
           <li><a href="#">Introductions</a></li>
-          <li><a href="#">Search</a>
+          <li><a href="#">&emsp;Search&emsp;</a>
             <ul>
-              <li><a href="#">二级第一</a></li>
-              <li><a href="#">二级第二</a></li>
-              <li><a href="#">二级第三</a></li>
-              <li><a href="#">二级第四</a></li>
+              <li><a href="#">Search1</a></li>
+              <li><a href="#">Search2</a></li>
+              <li><a href="#">Search3</a></li>
+              <li><a href="#">Search4</a></li>
             </ul>
           </li>
           <li><a href="#">Settings</a>
             <ul>
-              <li><a href="#">二级第一</a></li>
-              <li><a href="#">二级第二</a></li>
-              <li><a href="#">二级第三</a>
+              <li><a href="#">Setting1</a></li>
+              <li><a href="#">Setting2</a></li>
+              <li><a href="#">Setting3</a>
                 <ul>
-                  <li><a href="#">三级第一</a></li>
-                  <li><a href="#">三级第二</a></li>
+                  <li><a href="#">Setting31</a></li>
+                  <li><a href="#">Setting32</a></li>
                 </ul>
               </li>
             </ul>
           </li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Others</a>
+          <li><a href="#">&emsp;Others&emsp;</a>
             <ul>
-              <li><a href="#">二级第一</a></li>
-              <li><a href="#">二级第二</a></li>
-              <li><a href="#">二级第三</a></li>
+              <li><a href="#">Others1</a></li>
+              <li><a href="#">Others2</a></li>
+              <li><a href="#">Others3</a></li>
             </ul>
           </li>
         </ul>
@@ -141,7 +145,7 @@ export default {
             Walter Pater and Oscar Wilde.
           </p>
           <div class="ath-image">
-            <img src="./assets/images/Ath.png" style="height: 100%; width: 100%" alt="NL">
+            <img src="./assets/images/Ath.png" style="height: 100vh; width: 100vh;" alt="NL">
           </div>
           <div class="quickSearchButton">
             <a style="font-size: 3vh;" href="https://en.wikipedia.org/wiki/Aestheticism">Quick Search</a>
@@ -167,7 +171,7 @@ export default {
             </p>
           </div>
           <div class="quickSearchButton2">
-            <a style="font-size: 3vh;" href="https://en.wikipedia.org/wiki/Minimalism">Quick Search</a>
+            <a style="font-size: 3vh" href="https://en.wikipedia.org/wiki/Minimalism">Quick Search</a>
           </div>
         </div>
         <div class="page" style="background-color: #6b8996">
@@ -181,9 +185,41 @@ export default {
             </p>
           </div>
         </div>
+        <div class="page" style="background-color: dimgrey">
+          <vue-particles
+              class="particles"
+              id="particles-js"
+              color="#333"
+              :particleOpacity="0.5"
+              :particlesNumber="80"
+              shapeType="circle"
+              :particleSize="4"
+              linesColor="#333"
+              :linesWidth="1"
+              :lineLinked="true"
+              :lineOpacity="0.4"
+              :linesDistance="150"
+              :moveSpeed="2"
+              :hoverEffect="true"
+              hoverMode="repulse"
+              :clickEffect="true"
+              clickMode="bubble"
+          ></vue-particles>
+          <div id="page6jb"  hidden="hidden">
+            <div id="font-bar">
+              <p>MENU</p>
+            </div>
+            <div class="bar" id="b1"></div>
+            <div class="bar" id="b2"></div>
+            <div class="bar" id="b3"></div>
+            <div class="bar" id="b4"></div>
+            <div class="bar" id="b5"></div>
+            <div class="bar" id="b6"></div>
+          </div>
+        </div>
       </div>
-      <button class="leftArrow" @click="FlipPageLeft"></button>
-      <button class="rightArrow" @click="FlipPageRight"></button>
+      <button class="leftArrow" @click="FlipPageLeft" id="leftbutton"></button>
+      <button class="rightArrow" @click="FlipPageRight" id="rightbutton"></button>
     </main>
   </el-container>
 </template>
@@ -192,6 +228,8 @@ export default {
 @import './assets/styles/global.css';
 @import './assets/styles/navibar.css';
 @import './assets/styles/buttons.css';
-@import './assets/styles/page5.css';
+@import 'assets/styles/page2.css';
 @import './assets/styles/title.css';
+@import './assets/styles/backgrounds.css';
+@import 'assets/styles/page3.css';
 </style>

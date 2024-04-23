@@ -1,0 +1,59 @@
+#page6jb {
+    height: 90vh;
+    width: 15vw;
+    background: rgba(36, 36, 36, 0.6);
+    border-radius: 1vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+    top: 8%;
+    z-index: 990;
+}
+
+#font-bar {
+    margin: 1vw;
+    /*background: rgba(255, 255, 255, 0.5);*/
+    height: 12vh;
+    font-family: BebasNeue;
+    font-size: 12vh;
+    text-align: center;
+}
+
+.bar {
+    position: relative;
+    height: 11vh;
+    margin-bottom: 1vh;
+    width: 13vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1vh;
+}
+
+.bar:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.particles {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+
+.menu-bar-to-add {
+    animation: fade-in-from-left 3s;
+}
+
+@keyframes fade-in-from-left {
+    0% {
+        opacity: 0;
+        left: -10%;
+    }
+
+    100% {
+        opacity: 0.6;
+        left: 1%;
+    }
+}
