@@ -4,6 +4,7 @@ export default {
     return {
       currentPageIndex: 0,
       isJumpUp: 0,
+      showPage6jb: false
     }
   },
   mounted() {
@@ -45,6 +46,7 @@ export default {
       }
     },
     pageDesc(controlLen, curr) {
+      let win = this.$('mC')
       window.scrollTo(curr - controlLen,0)
     },
     pageInc(controlLen, curr) {
@@ -71,10 +73,10 @@ export default {
       if(window.scrollX >= 1.7 * currentWW) {
         let currentEle = this.$('#page5jb')
         currentEle.removeAttr('hidden')
-        currentEle.attr('class', 'animate__animated animate__bounceInUp')
+        currentEle.attr('class', 'animated bounceInUp')
         let currentEle3 = this.$('#about-tag')
         currentEle3.removeAttr('hidden')
-        currentEle3.attr('class', 'animate__animated animate__bounceInDown')
+        currentEle3.attr('class', 'animated bounceInDown')
       }
 
       //第四页
@@ -131,9 +133,9 @@ export default {
     <main ref="main">
       <div class="outer-container" id="mC">
         <div class="page" style="background-color: #323e74">
-          <p class="mainTitle animate__animated animate__fadeInDown">AESTHETICISM</p>
-          <p class="secondaryTitle animate__animated animate__fadeInLeft">also known as<br/>the aesthetic movement</p>
-          <p class="explanation animate__animated animate__fadeInUp">
+          <p class="mainTitle animated fadeInDown">AESTHETICISM</p>
+          <p class="secondaryTitle animated fadeInLeft">also known as<br/>the aesthetic movement</p>
+          <p class="explanation animated fadeInUp">
             According to Aestheticism, art and fonts<br/>
             should be produced to be beautiful,<br/>
             rather than to teach a lesson, create a<br/>
@@ -205,6 +207,7 @@ export default {
               :clickEffect="true"
               clickMode="bubble"
           ></vue-particles>
+<!--          <div id="page6jb"  hidden="hidden" :class="{page7jb: showPage6jb}">-->
           <div id="page6jb"  hidden="hidden">
             <div id="font-bar">
               <p>MENU</p>

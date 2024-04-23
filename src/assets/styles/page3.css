@@ -9,6 +9,11 @@
     left: 1%;
     top: 8%;
     z-index: 990;
+    opacity: 0;
+}
+
+.page7jb {
+    opacity: 1;
 }
 
 #font-bar {
@@ -44,6 +49,8 @@
 
 .menu-bar-to-add {
     animation: fade-in-from-left 3s;
+    opacity: 1 !important;
+    /*opacity: 1;*/
 }
 
 @keyframes fade-in-from-left {

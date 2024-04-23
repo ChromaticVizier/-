@@ -19,6 +19,10 @@
     scroll-behavior: smooth;
 }
 
+main {
+    scroll-behavior: smooth;
+}
+
 el-container {
     position: relative;
 }
