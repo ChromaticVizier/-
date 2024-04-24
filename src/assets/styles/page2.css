@@ -1,19 +1,86 @@
-#page5jb {
-    position: absolute;
-    left: 33%;
-    top: 35%;
-    /*transform: translate(-50%,-50%);*/
-    height: 33vh;
-    width: 33vw;
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 2vh;
-}
-
-#page2title {
+#page2-mainTitle {
     position: absolute;
     left: 6vw;
     top: 10vh;
     font-family: BebasNeue, Serif;
     font-size: 30vh;
     z-index: 993;
+    opacity: 0;
+}
+
+.page2-mainTitle-to-add {
+    animation: small-to-big 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes small-to-big {
+    0% {
+        font-size: 0.1vh;
+        opacity: 0;
+    }
+
+    1% {
+        font-size: 0.1vh;
+        opacity: 1;
+    }
+
+    100% {
+        font-size: 30vh;
+        opacity: 1;
+    }
+}
+
+#page2-secondaryTitle {
+    position: absolute;
+    left: 6vw;
+    top: 40vh;
+    font-family: Bitter-Light, Serif;
+    font-size: 6vh;
+    line-height: 6vh;
+    z-index: 992;
+    opacity: 0;
+}
+
+.page2-secondaryTitle-to-add {
+    animation: invisi-to-visi linear 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes invisi-to-visi {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#page2-content {
+    position: absolute;
+    left: 6vw;
+    top: 53vh;
+    font-family: Kalam, Serif;
+    font-size: 3vh;
+    line-height: 3vh;
+    z-index: 991;
+    opacity: 0;
+}
+
+.page2-content-to-add {
+    animation: l2l 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes l2l {
+    0% {
+        width: 300%;
+        opacity: 0;
+        left: -10vw;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+        left: 6vw;
+    }
 }

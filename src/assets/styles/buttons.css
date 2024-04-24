@@ -10,6 +10,10 @@
     clip-path: polygon(33% 7%, 15% 50%, 33% 93%, 23% 93%, 5% 50%, 23% 7%);
 }
 
+.leftArrow:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
 .rightArrow {
     height: 100px;
     width: 100px;
@@ -26,11 +30,7 @@
     background: rgba(255, 255, 255, 1);
 }
 
-.leftArrow:hover {
-    background: rgba(255, 255, 255, 1);
-}
-
-.quickSearchButton {
+.quickSearchButton1 {
     width: 12vw;
     height: 7vh;
     border-radius: 1vh;
@@ -43,13 +43,9 @@
     text-align: center;
 }
 
-.quickSearchButton:hover {
+.quickSearchButton1:hover {
     background: rgba(123, 104, 238, 1);
 
-}
-
-.quickSearchButton2:hover {
-    background: rgba(205, 92, 92, 1);
 }
 
 .quickSearchButton2 {
@@ -64,18 +60,6 @@
     text-align: center;
 }
 
-.right-button-new {
-    height: 100px;
-    width: 100px;
-    clip-path: polygon(
-            45% 0,
-            55% 0,
-            100% 50%,
-            55% 100%,
-            45% 100%,
-            88% 54%,
-            0 53%,
-            0 47%,
-            88% 48%
-    );
+.quickSearchButton2:hover {
+    background: rgba(205, 92, 92, 1);
 }

@@ -1,62 +1,29 @@
-#page6jb {
-    height: 90vh;
-    width: 15vw;
-    background: rgba(36, 36, 36, 0.6);
-    border-radius: 1vh;
+#about-tag {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 1%;
-    top: 8%;
-    z-index: 990;
+    left: 40vw;
+    top: 20vh;
+    font-family: BebasNeue, Serif;
+    font-size: 20vh;
+    z-index: 995;
     opacity: 0;
 }
 
-#font-bar {
-    margin: 1vw;
-    /*background: rgba(255, 255, 255, 0.5);*/
-    height: 12vh;
-    font-family: BebasNeue;
-    font-size: 12vh;
-    text-align: center;
-}
-
-.bar {
-    position: relative;
-    height: 11vh;
-    margin-bottom: 1vh;
-    width: 13vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 1vh;
-}
-
-.bar:hover {
-    background: rgba(255, 255, 255, 1);
-}
-
-.particles {
+#page3-jumpBox {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
+    left: 33%;
+    top: 35%;
+    /*transform: translate(-50%,-50%);*/
+    height: 33vh;
+    width: 33vw;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+    opacity: 0;
 }
 
-.menu-bar-to-add {
-    animation: fade-in-from-left 3s;
-    animation-fill-mode: forwards;
-}
 
-@keyframes fade-in-from-left {
-    0% {
-        /*background: rgba(36, 36, 36, 0);*/
-        left: -10%;
-        opacity: 0;
-    }
 
-    100% {
-        background: rgba(36, 36, 36, 0.6);
-        opacity: 1;
-    }
-}
+
+
+
+
+
