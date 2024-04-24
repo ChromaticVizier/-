@@ -12,10 +12,6 @@
     opacity: 0;
 }
 
-.page7jb {
-    opacity: 1;
-}
-
 #font-bar {
     margin: 1vw;
     /*background: rgba(255, 255, 255, 0.5);*/
@@ -49,18 +45,18 @@
 
 .menu-bar-to-add {
     animation: fade-in-from-left 3s;
-    opacity: 1 !important;
-    /*opacity: 1;*/
+    animation-fill-mode: forwards;
 }
 
 @keyframes fade-in-from-left {
     0% {
-        opacity: 0;
+        /*background: rgba(36, 36, 36, 0);*/
         left: -10%;
+        opacity: 0;
     }
 
     100% {
-        opacity: 0.6;
-        left: 1%;
+        background: rgba(36, 36, 36, 0.6);
+        opacity: 1;
     }
 }

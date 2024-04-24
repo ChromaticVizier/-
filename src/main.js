@@ -6,6 +6,7 @@ import 'animate.css/animate.min.css'
 import animated from 'wowjs/css/libs/animate.css'
 import '../src/assets/styles/font.css'
 import VueParticles from 'vue-particles'
+
 import $ from 'jquery'
 Vue.prototype.$ = $
 Vue.use(VueParticles)

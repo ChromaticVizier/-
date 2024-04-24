@@ -16,11 +16,7 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-}
-
-main {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 el-container {
@@ -35,4 +31,5 @@ header {
 main {
     position: absolute;
     top: 0;
+    scroll-behavior: smooth;
 }

@@ -4,7 +4,6 @@ export default {
     return {
       currentPageIndex: 0,
       isJumpUp: 0,
-      showPage6jb: false
     }
   },
   mounted() {
@@ -46,12 +45,21 @@ export default {
       }
     },
     pageDesc(controlLen, curr) {
-      let win = this.$('mC')
-      window.scrollTo(curr - controlLen,0)
+      // window.scrollTo(curr - controlLen, 0)
+      window.scrollTo({
+        left: curr - controlLen,
+        top: 0,
+        behavior: "smooth"
+      })
     },
     pageInc(controlLen, curr) {
-      window.scrollTo(curr + controlLen,0)
+      window.scrollTo({
+        left: curr + controlLen,
+        top: 0,
+        behavior: "smooth"
+      })
     },
+
     handleScroll() {
       // 当前窗宽
       let currentWW = window.innerWidth
@@ -85,6 +93,8 @@ export default {
         currentEle.attr('class', 'menu-bar-to-add')
       }
     },
+
+
   },
   watch: {
 
@@ -131,7 +141,7 @@ export default {
       </nav>
     </header>
     <main ref="main">
-      <div class="outer-container" id="mC">
+      <div class="outer-container" id="mC" style="scroll-behavior: smooth">
         <div class="page" style="background-color: #323e74">
           <p class="mainTitle animated fadeInDown">AESTHETICISM</p>
           <p class="secondaryTitle animated fadeInLeft">also known as<br/>the aesthetic movement</p>
@@ -157,23 +167,25 @@ export default {
           <div id="page2title" hidden="hidden">
             <p class="mainTitle2">Minimalism</p>
           </div>
-          <div id="page2secondary">
-            <p class="explanation2">
-              The term minimalist often colloquially refers to<br/>
-              anything or anyone that is spare or stripped to its essentials.
-            </p>
-          </div>
-          <div id="page2content" hidden="hidden">
-            <p>
-              In visual arts, music and other media, minimalism is an art movement<br/>
-              that began in post–World War II in Western art, most strongly with<br/>
-              American visual arts in the 1960s and early 1970s. Prominent artists<br/>
-              associated with minimalism include Donald Judd, Agnes Martin,<br/>
-              Dan Flavin, Carl Andre, Robert Morris, Anne Truitt and Frank Stella.
-            </p>
-          </div>
-          <div class="quickSearchButton2">
-            <a style="font-size: 3vh" href="https://en.wikipedia.org/wiki/Minimalism">Quick Search</a>
+          <div>
+            <div id="page2secondary">
+              <p>
+                The term minimalist often colloquially refers to<br/>
+                anything or anyone that is spare or stripped to its essentials.
+              </p>
+            </div>
+            <div id="page2content" hidden="hidden">
+              <p>
+                In visual arts, music and other media, minimalism is an art movement<br/>
+                that began in post–World War II in Western art, most strongly with<br/>
+                American visual arts in the 1960s and early 1970s. Prominent artists<br/>
+                associated with minimalism include Donald Judd, Agnes Martin,<br/>
+                Dan Flavin, Carl Andre, Robert Morris, Anne Truitt and Frank Stella.
+              </p>
+            </div>
+            <div class="quickSearchButton2">
+              <a style="font-size: 3vh" href="https://en.wikipedia.org/wiki/Minimalism">Quick Search</a>
+            </div>
           </div>
         </div>
         <div class="page" style="background-color: #6b8996">
@@ -207,8 +219,7 @@ export default {
               :clickEffect="true"
               clickMode="bubble"
           ></vue-particles>
-<!--          <div id="page6jb"  hidden="hidden" :class="{page7jb: showPage6jb}">-->
-          <div id="page6jb"  hidden="hidden">
+          <div id="page6jb">
             <div id="font-bar">
               <p>MENU</p>
             </div>
@@ -235,4 +246,5 @@ export default {
 @import './assets/styles/title.css';
 @import './assets/styles/backgrounds.css';
 @import 'assets/styles/page3.css';
+
 </style>
