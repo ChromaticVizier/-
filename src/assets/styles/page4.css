@@ -12,6 +12,14 @@
     opacity: 0;
 }
 
+.button-box-container {
+    display: grid;
+    grid-row-gap: 1vh;
+    z-index: 999;
+    right: 1%;
+    top: 8%;
+}
+
 #menu-tag {
     margin: 1vw;
     /*background: rgba(255, 255, 255, 0.5);*/
@@ -61,3 +69,44 @@
     width: 100%;
     z-index: 5;
 }
+
+#button-box1 {
+    height: 40vh;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#button-box2 {
+    height: 40vh;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#button-box3 {
+    height: 40vh;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+    position: relative;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#button-box4 {
+    height: 40vh;
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 2vh;
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+}
+

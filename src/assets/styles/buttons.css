@@ -45,6 +45,7 @@
 
 .quickSearchButton1:hover {
     background: rgba(123, 104, 238, 1);
+    border: solid rebeccapurple 1px;
 
 }
 
@@ -58,8 +59,10 @@
     right: 29vw;
     font-family: Prompts;
     text-align: center;
+    z-index: 992;
 }
 
 .quickSearchButton2:hover {
     background: rgba(205, 92, 92, 1);
+    border: solid darkred 1px;
 }

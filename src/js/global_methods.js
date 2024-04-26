@@ -53,36 +53,36 @@ export default {
     },
 
     handleScroll() {
-        // 当前窗宽
+        // current window width
         let currentWW = window.innerWidth
 
-        // 第二页
+        // page two
         if(window.scrollX >= 0.7 * currentWW) {
-            let currentEle = document.getElementById('page2-mainTitle')
-            currentEle.setAttribute('class', 'page2-mainTitle-to-add')
+            let page2_mainTitle = document.getElementById('page2-mainTitle')
+            page2_mainTitle.setAttribute('class', 'page2-mainTitle-to-add')
 
-            let currentEle1 = document.getElementById('page2-secondaryTitle')
-            currentEle1.setAttribute('class', 'page2-secondaryTitle-to-add')
+            let page2_secondaryTitle = document.getElementById('page2-secondaryTitle')
+            page2_secondaryTitle.setAttribute('class', 'page2-secondaryTitle-to-add')
 
-            let currentEle2 = document.getElementById('page2-content')
-            currentEle2.setAttribute('class', 'page2-content-to-add')
+            let page2_content = document.getElementById('page2-content')
+            page2_content.setAttribute('class', 'page2-content-to-add')
         }
 
-        // 第三页
+        // page three
         if(window.scrollX >= 1.7 * currentWW) {
-            let currentEle = this.$('#page3-jumpBox')
-            currentEle.attr('style', 'opacity: 1')
-            currentEle.attr('class', 'animated bounceInUp')
+            let page3_jumpbox = this.$('#page3-jumpBox')
+            page3_jumpbox.attr('style', 'opacity: 1')
+            page3_jumpbox.attr('class', 'animated bounceInUp')
 
-            let currentEle3 = this.$('#about-tag')
-            currentEle3.attr('style', 'opacity: 1')
-            currentEle3.attr('class', 'animated bounceInDown')
+            let about_tag = this.$('#about-tag')
+            about_tag.attr('style', 'opacity: 1')
+            about_tag.attr('class', 'animated bounceInDown')
         }
 
-        //第四页
+        // page four
         if(window.scrollX >= 2.7 * currentWW) {
-            let currentEle = this.$('#page4-menubar')
-            currentEle.attr('class', 'page4-menubar-to-add')
+            let page4_menubar = this.$('#page4-menubar')
+            page4_menubar.attr('class', 'page4-menubar-to-add')
         }
     },
 }
