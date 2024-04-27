@@ -14,10 +14,14 @@
 
 .button-box-container {
     display: grid;
-    grid-row-gap: 1vh;
-    z-index: 999;
-    right: 1%;
-    top: 8%;
+    grid-row-gap: 2vh;
+    grid-column-gap: 1vw;
+    z-index: 990;
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    left: 17vw;
+    top: 8vh;
 }
 
 #menu-tag {
@@ -71,42 +75,201 @@
 }
 
 #button-box1 {
-    height: 40vh;
+    height: 44vh;
     width: 40vw;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 2vh;
     position: relative;
+    opacity: 0;
     grid-column: 1;
     grid-row: 1;
+}
+
+#button-box1:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+.button-box1-to-add {
+    animation: from-leftTop-to-rightBottom 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes from-leftTop-to-rightBottom {
+    0% {
+        opacity: 0;
+        top: -10vh;
+        left: -10vw;
+    }
+
+    1% {
+        opacity: 1;
+        top: -10vh;
+        left: -10vw;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
 }
 
 #button-box2 {
-    height: 40vh;
+    height: 44vh;
     width: 40vw;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 2vh;
     position: relative;
+    opacity: 0;
     grid-column: 2;
     grid-row: 1;
 }
 
+#button-box2:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+.button-box2-to-add {
+    animation: from-rightTop-to-leftBottom 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes from-rightTop-to-leftBottom {
+    0% {
+        opacity: 0;
+        top: -10vh;
+        left: 10vw;
+    }
+
+    1% {
+        opacity: 1;
+        top: -10vh;
+        left: 10vw;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
 #button-box3 {
-    height: 40vh;
+    height: 44vh;
     width: 40vw;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 2vh;
     position: relative;
+    opacity: 0;
     grid-column: 1;
     grid-row: 2;
 }
 
+#button-box3:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+.button-box3-to-add {
+    animation: from-leftBottom-to-rightTop 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes from-leftBottom-to-rightTop {
+    0% {
+        opacity: 0;
+        top: 10vh;
+        left: -10vw;
+    }
+
+    1% {
+        opacity: 1;
+        top: 10vh;
+        left: -10vw;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
 #button-box4 {
-    height: 40vh;
+    height: 44vh;
     width: 40vw;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 2vh;
     position: relative;
+    opacity: 0;
     grid-column: 2;
     grid-row: 2;
 }
 
+#button-box4:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border: solid black 2px;
+}
+
+.button-box4-to-add {
+    animation: from-rightBottom-to-leftTop 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes from-rightBottom-to-leftTop {
+    0% {
+        opacity: 0;
+        top: 10vh;
+        left: 10vw;
+    }
+
+    1% {
+        opacity: 1;
+        top: 10vh;
+        left: 10vw;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+}
+
+.six {
+    font-size: 10vh;
+    font-family: Prompts;
+    right: 1vh;
+    bottom: -3vh;
+    position: absolute;
+}
+
+.seven {
+    font-size: 10vh;
+    font-family: Prompts;
+    left: 1vh;
+    bottom: -3vh;
+    position: absolute;
+}
+
+.eight {
+    font-size: 10vh;
+    font-family: Prompts;
+    right: 1vh;
+    top: -3vh;
+    position: absolute;
+}
+
+.nine {
+    font-size: 10vh;
+    font-family: Prompts;
+    left: 1vh;
+    top: -3vh;
+    position: absolute;
+}

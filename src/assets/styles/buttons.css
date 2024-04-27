@@ -45,6 +45,7 @@
 
 .quickSearchButton1:hover {
     background: rgba(123, 104, 238, 1);
+    box-sizing: border-box;
     border: solid rebeccapurple 1px;
 
 }
@@ -64,5 +65,45 @@
 
 .quickSearchButton2:hover {
     background: rgba(205, 92, 92, 1);
+    box-sizing: border-box;
     border: solid darkred 1px;
+}
+
+.six-1 {
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    clip-path: polygon(50% 4%, 96% 25%, 96% 75%, 50% 96%, 4% 75%, 4% 25%);
+    background-color: #323e74;
+    top: 2vh;
+    left: 1vw;
+}
+
+.six-2 {
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    clip-path: polygon(35% 4%, 50% 4%, 20% 50%, 50% 96%, 35% 96%, 4% 50%);
+    background-color: #323e74;
+    top: 2vh;
+    left: 10vw;
+}
+
+.six-3 {
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    clip-path: polygon(85% 4%, 50% 50%, 96% 15%, 50% 96%, 4% 96%, 4% 50%);
+    background-color: #323e74;
+    top: 15vh;
+    left: 1vw;
+}
+
+.six-4 {
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    background-color: #323e74;
+    top: 15vh;
+    left: 10vw;
 }

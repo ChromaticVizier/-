@@ -83,6 +83,35 @@ export default {
         if(window.scrollX >= 2.7 * currentWW) {
             let page4_menubar = this.$('#page4-menubar')
             page4_menubar.attr('class', 'page4-menubar-to-add')
+
+            let button_box_1 = this.$('#button-box1')
+            button_box_1.attr('class', 'button-box1-to-add')
+
+            let button_box_2 = this.$('#button-box2')
+            button_box_2.attr('class', 'button-box2-to-add')
+
+            let button_box_3 = this.$('#button-box3')
+            button_box_3.attr('class', 'button-box3-to-add')
+
+            let button_box_4 = this.$('#button-box4')
+            button_box_4.attr('class', 'button-box4-to-add')
         }
     },
+
+    six1() {
+        alert("six-1 clicked.")
+    },
+
+    six2() {
+        alert("six-2 clicked.")
+    },
+
+    six3() {
+        alert("six-3 clicked.")
+    },
+
+    six4() {
+        alert("six-4 clicked.")
+    },
+
 }

@@ -180,25 +180,25 @@ export default {
 
         <!--============================= Page four ==============================-->
         <div class="page" style="background-color: dimgrey">
-          <vue-particles
-              class="particles-background"
-              id="particles-js"
-              color="#333"
-              :particleOpacity="0.5"
-              :particlesNumber="80"
-              shapeType="circle"
-              :particleSize="4"
-              linesColor="#333"
-              :linesWidth="1"
-              :lineLinked="true"
-              :lineOpacity="0.4"
-              :linesDistance="150"
-              :moveSpeed="2"
-              :hoverEffect="true"
-              hoverMode="repulse"
-              :clickEffect="true"
-              clickMode="bubble"
-          ></vue-particles>
+<!--          <vue-particles-->
+<!--              class="particles-background"-->
+<!--              id="particles-js"-->
+<!--              color="#333"-->
+<!--              :particleOpacity="0.5"-->
+<!--              :particlesNumber="80"-->
+<!--              shapeType="circle"-->
+<!--              :particleSize="4"-->
+<!--              linesColor="#333"-->
+<!--              :linesWidth="1"-->
+<!--              :lineLinked="true"-->
+<!--              :lineOpacity="0.4"-->
+<!--              :linesDistance="150"-->
+<!--              :moveSpeed="2"-->
+<!--              :hoverEffect="true"-->
+<!--              hoverMode="repulse"-->
+<!--              :clickEffect="true"-->
+<!--              clickMode="bubble"-->
+<!--          ></vue-particles>-->
           <div id="page4-menubar">
             <div id="menu-tag">
               <p>MENU</p>
@@ -211,10 +211,22 @@ export default {
             <div class="sub-bar" id="b6"></div>
           </div>
           <div class="button-box-container">
-            <div id="button-box1"></div>
-            <div id="button-box2"></div>
-            <div id="button-box3"></div>
-            <div id="button-box4"></div>
+            <div id="button-box1">
+              <p class="six">6</p>
+              <button class="six-1" @click="six1"></button>
+              <button class="six-2" @click="six2"></button>
+              <button class="six-3" @click="six3"></button>
+              <button class="six-4" @click="six4"></button>
+            </div>
+            <div id="button-box2">
+              <p class="seven">7</p>
+            </div>
+            <div id="button-box3">
+              <p class="eight">8</p>
+            </div>
+            <div id="button-box4">
+              <p class="nine">9</p>
+            </div>
           </div>
 
         </div>
