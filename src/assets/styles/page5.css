@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    width: 265px;
+    height: 425px;
+    border-radius: 1vw;
+    /*background-color: cornflowerblue;*/
+    border: solid 5px rgba(39, 58, 93, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 400px;
+    font-size: 200px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei", sans-serif;
+    z-index: 3;
+    transition: .5s;
+    transform-origin: center;
+    opacity: 0.9;
+    background-color: cornflowerblue;
+}
+
+.outer-container {
+    width: 265px;
+    height: 425px;
+    position: relative;
+    transform: translate(40vw, 17vh);
+    /*transition: .5s;*/
+    /*transform-origin: 50% 100%;*/
+}
+
+.outer-container:hover .card {
+    transform: rotate(calc(var(--i) * 5deg))
+    translate(calc(var(--i) * 18vh), -50px);
+    /*translate(0, calc(var(--i) * 10vw));*/
+    cursor: pointer;
+}
+
+.outer-container:active .card:not(:active) {
+    background-color: #333;
+}
+
+.outer-container:active .card:active {
+    width: calc(265px*1.5);
+    height: calc(425px*1.5);
+    font-size: 300px;
+    line-height: calc(425px*1.5);
+    z-index: 5;
+    translate: calc(var(--i) * 5vh) -100px;
+    opacity: 1;
+}
+
+.c1 {
+    background-color: darkred;
+}
+
+.c2 {
+    background-color: red;
+}
+
+.c3 {
+    background-color: goldenrod;
+}
+
+.c4 {
+    background-color: green;
+}
+
+.c5 {
+    background-color: cornflowerblue;
+}
+
+.c6 {
+    background-color: midnightblue;
+}
+
+.c7 {
+    background-color: purple;
+}
+
+.c8 {
+    background-color: rebeccapurple;
+}
+
+.c2-5 {
+    background-color: orangered;
+}

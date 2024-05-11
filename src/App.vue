@@ -113,7 +113,7 @@ export default {
       </nav>
     </header>
     <main ref="main">
-      <div class="outer-container" id="horizontal-container">
+      <div class="global-container" id="horizontal-container">
 
         <!--============================= Page one =============================-->
         <div class="page" style="background-color: #323e74">
@@ -232,6 +232,21 @@ export default {
         </div>
         <!--======================================================================-->
 
+        <!--============================= Page five ==============================-->
+        <div class="page" style="background-color: darkolivegreen">
+          <div class="outer-container">
+            <div class="card c1" style="--i:-4;">1</div>
+            <div class="card c2" style="--i:-3;">2</div>
+            <div class="card c2-5" style="--i:-2;">3</div>
+            <div class="card c3" style="--i:-1;">4</div>
+            <div class="card c4" style="--i:0;">5</div>
+            <div class="card c5" style="--i:1;">6</div>
+            <div class="card c6" style="--i:2;">7</div>
+            <div class="card c7" style="--i:3;">8</div>
+            <div class="card c8" style="--i:4;">9</div>
+          </div>
+        </div>
+        <!--======================================================================-->
       </div>
 
       <button class="leftArrow" @click="TurnLeft" id="left-button"></button>
@@ -250,4 +265,5 @@ export default {
 @import 'assets/styles/page2.css';
 @import 'assets/styles/page3.css';
 @import 'assets/styles/page4.css';
+@import 'assets/styles/page5.css';
 </style>
