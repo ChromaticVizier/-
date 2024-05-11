@@ -1,19 +1,2 @@
-# horizonal_layout
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+本项目是基于vue框架的纯个人练习项目。
+部署之前先看演示视频。
