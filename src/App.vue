@@ -70,7 +70,24 @@ export default {
                 "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@@*%%*-*********************+=+%@@@@%#-#@%%%%%%%%%%%%%%%%%%%%%%%%%\n" +
                 "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%@#+@@#=*********************+=%@@@@@@@%+@%%%%%%%%%%%%%%%%%%%%%%%%%")
   },
-  methods: global_methods
+  methods: global_methods,
+
+  directives: {
+    drag(el, bindings) {
+      el.onmousedown = function(e) {
+        var disx = e.pageX - el.offsetLeft
+        var disy = e.pageY - el.offsetTop
+        document.onmousemove = function (e) {
+          el.style.left = e.pageX - disx + 'px'
+          el.style.top = e.pageY - disy + 'px'
+        }
+        document.onmouseup = function() {
+          document.onmousemove = document.onmouseup = null
+        }
+      }
+    }
+  }
+
 }
 </script>
 
@@ -213,10 +230,10 @@ export default {
           <div class="button-box-container">
             <div id="button-box1">
               <p class="six">6</p>
-              <button class="six-1" @click="six1"></button>
-              <button class="six-2" @click="six2"></button>
-              <button class="six-3" @click="six3"></button>
-              <button class="six-4" @click="six4"></button>
+              <button v-drag class="six-1" @click="six1"></button>
+              <button v-drag class="six-2" @click="six2"></button>
+              <button v-drag class="six-3" @click="six3"></button>
+              <button v-drag class="six-4" @click="six4"></button>
             </div>
             <div id="button-box2">
               <p class="seven">7</p>

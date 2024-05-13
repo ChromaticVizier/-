@@ -44,6 +44,10 @@
     background-color: #333;
 }
 
+/*.outer-container:hover .card:not(:hover) {*/
+/*    background-color: #333;*/
+/*}*/
+
 .outer-container:active .card:active {
     width: calc(265px*1.5);
     height: calc(425px*1.5);
@@ -53,6 +57,16 @@
     translate: calc(var(--i) * 5vh) -100px;
     opacity: 1;
 }
+
+/*.outer-container:hover .card:hover {*/
+/*    width: calc(265px*1.5);*/
+/*    height: calc(425px*1.5);*/
+/*    font-size: 300px;*/
+/*    line-height: calc(425px*1.5);*/
+/*    z-index: 5;*/
+/*    translate: calc(var(--i) * 5vh) -100px;*/
+/*    opacity: 1;*/
+/*}*/
 
 .c1 {
     background-color: darkred;
