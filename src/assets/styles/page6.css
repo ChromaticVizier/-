@@ -1,0 +1,60 @@
+.circle-container {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 20vh;
+    /*background-color: #333333;*/
+    position: relative;
+    left: 40vw;
+    top: 20vh;
+}
+
+.hover-container {
+    height: 40vh;
+    width: 40vh;
+    border-radius: 20vh;
+}
+
+.circle-tag {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 3vh;
+    position: absolute;
+    left: 17vh;
+    top: 0;
+    background-color: #6b8996;
+    transition: .5s;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 6vh;
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}
+
+.circle-container:hover .circle-tag {
+    transform: translate(calc(sin(calc(var(--i)*45deg))*20vh), calc(calc(1 - cos(calc(var(--i)*45deg)))*20vh));
+    cursor: pointer;
+}
+
+.circle-tag:active {
+    background-color: orangered;
+    font-size: 7vh;
+    line-height: 8vh;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 4vh;
+    translate: -1vh -1vh;
+}
+
+.display-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    width: 10vw;
+    height: 10vh;
+    left: 70vw;
+    z-index: 20;
+    border-radius: 1vh;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 8vh;
+    font-family: "Microsoft YaHei";
+}

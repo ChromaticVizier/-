@@ -197,25 +197,6 @@ export default {
 
         <!--============================= Page four ==============================-->
         <div class="page" style="background-color: dimgrey">
-<!--          <vue-particles-->
-<!--              class="particles-background"-->
-<!--              id="particles-js"-->
-<!--              color="#333"-->
-<!--              :particleOpacity="0.5"-->
-<!--              :particlesNumber="80"-->
-<!--              shapeType="circle"-->
-<!--              :particleSize="4"-->
-<!--              linesColor="#333"-->
-<!--              :linesWidth="1"-->
-<!--              :lineLinked="true"-->
-<!--              :lineOpacity="0.4"-->
-<!--              :linesDistance="150"-->
-<!--              :moveSpeed="2"-->
-<!--              :hoverEffect="true"-->
-<!--              hoverMode="repulse"-->
-<!--              :clickEffect="true"-->
-<!--              clickMode="bubble"-->
-<!--          ></vue-particles>-->
           <div id="page4-menubar">
             <div id="menu-tag">
               <p>MENU</p>
@@ -250,7 +231,27 @@ export default {
         <!--======================================================================-->
 
         <!--============================= Page five ==============================-->
-        <div class="page" style="background-color: darkolivegreen">
+        <div class="page" style="background-color: midnightblue">
+          <vue-particles
+              class="particles-background"
+              id="particles-js"
+              color="#ffffff"
+              :particleOpacity="0.3"
+              :particlesNumber="160"
+              shapeType="circle"
+              :particleSize="4"
+              linesColor="#ffffff"
+              :linesWidth="1"
+              :lineLinked="true"
+              :lineOpacity="0.4"
+              :linesDistance="150"
+              :moveSpeed="2"
+              :hoverEffect="true"
+              hoverMode="grab"
+              :clickEffect="true"
+              clickMode=""
+              style="z-index: 0"
+          ></vue-particles>
           <div class="outer-container">
             <div class="card c1" style="--i:-4;">1</div>
             <div class="card c2" style="--i:-3;">2</div>
@@ -261,6 +262,24 @@ export default {
             <div class="card c6" style="--i:2;">7</div>
             <div class="card c7" style="--i:3;">8</div>
             <div class="card c8" style="--i:4;">9</div>
+          </div>
+        </div>
+        <!--======================================================================-->
+
+        <!--============================== Page six ==============================-->
+        <div class="page" style="background-color: darkolivegreen">
+          <div class="circle-container">
+            <div class="circle-tag" style="--i:0">0</div>
+            <div class="circle-tag" style="--i:1">1</div>
+            <div class="circle-tag" style="--i:2">2</div>
+            <div class="circle-tag" style="--i:3">3</div>
+            <div class="circle-tag" style="--i:4">4</div>
+            <div class="circle-tag" style="--i:5">5</div>
+            <div class="circle-tag" style="--i:6">6</div>
+            <div class="circle-tag" style="--i:7">7</div>
+          </div>
+          <div class="display-content">
+
           </div>
         </div>
         <!--======================================================================-->
@@ -283,4 +302,5 @@ export default {
 @import 'assets/styles/page3.css';
 @import 'assets/styles/page4.css';
 @import 'assets/styles/page5.css';
+@import 'assets/styles/page6.css';
 </style>
