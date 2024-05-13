@@ -1,2 +1,2 @@
-本项目是基于vue框架的纯个人练习项目。
-部署之前先看演示视频。
+This is a project based on vue frame for personal exercise. 
+It uses some of the techniques you might use for horizontal site layout.
