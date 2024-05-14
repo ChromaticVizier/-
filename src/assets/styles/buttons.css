@@ -107,3 +107,18 @@
     top: 15vh;
     left: 10vw;
 }
+
+.autoscroll {
+    position: fixed;
+    z-index: 1000;
+    top: 1vh;
+    right: 1vh;
+    width: 20vh;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 3vh;
+    font-family: JosefinSans;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2vh;
+}

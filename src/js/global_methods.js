@@ -114,4 +114,21 @@ export default {
         alert("six-4 clicked.")
     },
 
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    },
+
+    async autoScroll() {
+        let notification = this.$('#notification-tab')
+        notification.removeAttr('style')
+        let currentX = window.scrollX
+        let currentWW = window.innerWidth
+        let pageToGo = currentWW * 5 - currentX
+        console.log(pageToGo)
+        for(let i = currentX + 1; i <= currentX + pageToGo; i+=2) {
+            scrollTo(i, 0)
+            await this.sleep(0.2)
+        }
+        notification.attr('style', 'visibility: hidden')
+    }
 }

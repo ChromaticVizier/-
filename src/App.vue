@@ -278,8 +278,14 @@ export default {
             <div class="circle-tag" style="--i:6">6</div>
             <div class="circle-tag" style="--i:7">7</div>
           </div>
-          <div class="display-content">
-
+          <div class="loading-bar-container">
+            <div class="loading-bar">
+              <div class="loading-item" style="--j:-2">正</div>
+              <div class="loading-item" style="--j:-1">在</div>
+              <div class="loading-item" style="--j:0">，</div>
+              <div class="loading-item" style="--j:1">加</div>
+              <div class="loading-item" style="--j:2">载</div>
+            </div>
           </div>
         </div>
         <!--======================================================================-->
@@ -287,7 +293,8 @@ export default {
 
       <button class="leftArrow" @click="TurnLeft" id="left-button"></button>
       <button class="rightArrow" @click="TurnRight" id="right-button"></button>
-
+      <button class="autoscroll" @click="autoScroll">Auto scroll</button>
+      <p id="notification-tab" style="visibility: hidden">Press F5 to stop auto scroll.</p>
     </main>
   </el-container>
 </template>

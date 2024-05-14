@@ -32,3 +32,12 @@ main {
     top: 0;
     scroll-behavior: smooth;
 }
+
+#notification-tab {
+    font-size: 2vh;
+    position: fixed;
+    right: 25vh;
+    top: 2vh;
+    z-index: 1001;
+    font-family: JosefinSans;
+}
